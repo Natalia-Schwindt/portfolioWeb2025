@@ -9,354 +9,41 @@
       src="https://kit.fontawesome.com/eb8debf0a8.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      function toggleMenu() {
-        document.getElementById("mobile-menu").classList.toggle("hidden");
-        document.getElementById("menu-icon").classList.toggle("fa-bars");
-        document.getElementById("menu-icon").classList.toggle("fa-times");
-      }
-    </script>
   </head>
-  <body class="bg-gray-100">
-    <header
-      class="bg-[url(img/banner.jpg)] bg-cover bg-center bg-no-repeat h-[40vh] flex flex-col items-center justify-center"
-    >
-
-      <nav class="absolute top-0 flex justify-between w-full text-white font-bold p-4">
+  <body
+    class="h-screen bg-[url(img/banner.jpg)] bg-cover bg-center bg-no-repeat flex flex-col"
+  >
+    <main class="flex flex-col items-center justify-center flex-grow">
+      <nav
+        class="absolute top-0 flex justify-between w-full text-white font-bold p-4"
+      >
         <button class="md:hidden text-2xl" onclick="toggleMenu()">
           <i id="menu-icon" class="fas fa-bars"></i>
         </button>
         <ul class="hidden md:flex p-4 space-x-4">
-          <a href="#presentation"><li>Inicio</li></a>
-          <a href="#projects"><li>Proyectos</li></a>
-          <a href="#contact"><li>Contacto</li></a>
+          <a href="/pages/Presentation.html">Sobre mi</a>
+          <a href="/pages/Proyects.html">Proyectos</a>
+          <a href="/pages/Contact.html">Contacto</a>
         </ul>
       </nav>
-      <div id="mobile-menu" class="hidden flex-col absolute top-14 left-0 w-full bg-gray-900 text-white p-4 space-y-2 md:hidden">
-        <a href="#presentation" class="block">Inicio</a>
-        <a href="#projects" class="block">Proyectos</a>
-        <a href="#contact" class="block">Contacto</a>
+      <div
+        id="mobile-menu"
+        class="hidden flex-col absolute top-14 left-0 w-full bg-gray-900 text-white p-4 space-y-2 md:hidden"
+      >
+        <a href="/pages/Presentation.html" class="block">Sobre mi</a>
+        <a href="/pages/Proyects.html" class="block">Proyectos</a>
+        <a href="/pages/Contact.html" class="block">Contacto</a>
       </div>
 
       <h1
-  class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-white font-bold mt-40 mb-8 drop-shadow-[0_0_10px_#000000] 
-  [text-shadow:_-2px_-2px_0_black,_2px_-2px_0_black,_-2px_2px_0_black,_2px_2px_0_black]"
->
-  Portfolio Web 2025
-</h1>
-
-
-    </header>
-    <main class="bg-gray-100 p-8 text-gray-800 font-sans space-y-6">
-      <section id="presentation" class="py-12 px-6 bg-gray-50 text-center">
-        <h2 class="text-3xl font-semibold text-gray-800 mb-4">
-          Bienvenidos a mi Portfolio
-        </h2>
-        <p class="text-lg leading-relaxed text-gray-600 max-w-3xl mx-auto">
-          Soy Natalia, una Frontend Developer apasionada por crear experiencias
-          web atractivas y funcionales. Aquí puedes conocer más sobre mi
-          trabajo, mis proyectos y mis objetivos profesionales.
-        </p>
-      </section>
-
-      <section id="about" class="py-12 px-6 bg-white text-center">
-        <h2 class="text-3xl font-semibold text-gray-800 mb-6">Sobre mí</h2>
-        <div class="max-w-4xl mx-auto space-y-6">
-          <p class="text-lg leading-relaxed text-gray-600">
-            Hola, soy Natalia Schwindt, una Frontend Developer apasionada por
-            construir experiencias web funcionales y atractivas. Mi interés por
-            la tecnología comenzó hace algunos años, y desde entonces me he
-            dedicado a aprender diversas herramientas y frameworks para mejorar
-            mis habilidades.
-          </p>
-          <p class="text-lg leading-relaxed text-gray-600">
-            A lo largo de mi carrera, he trabajado con tecnologías como HTML,
-            CSS, Sass, JavaScript, TypeScript, React, Angular, Tailwind, Chakra
-            UI, y APIs, y continúo ampliando mis conocimientos para estar al día
-            con las últimas tendencias del desarrollo web.
-          </p>
-          <p class="text-lg leading-relaxed text-gray-600">
-            Mi objetivo profesional es encontrar un puesto de trabajo remoto
-            donde pueda aplicar mis conocimientos y continuar creciendo. Me
-            encanta colaborar en equipos multidisciplinarios y contribuir al
-            desarrollo de productos innovadores.
-          </p>
-          <p class="text-lg leading-relaxed text-gray-600">
-            Además de la tecnología, me apasionan los idiomas. Hablo un poco de
-            inglés y estoy aprendiendo ruso. Creo que los idiomas son una
-            excelente forma de conectar con nuevas culturas y expandir las
-            posibilidades de trabajo en un entorno global. ¡Te invito a explorar
-            mis proyectos y conocer más sobre mi trabajo!
-          </p>
-        </div>
-        <a href="#top" class="inline-block mt-5 text-blue-600 hover:text-blue-800 font-medium">
-            Volver arriba
-          </a>
-      </section>
-
-        <section id="projects" class="py-12 bg-gray-100 px-2 lg:px-8">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
-          Mis Proyectos
-        </h2>
-
-        <div class="flex flex-col lg:flex-row items-center bg-white rounded-2xl shadow-lg overflow-hidden mb-12 mx-1 sm:mx-1">
-          <div class="w-full sm:w-full lg:w-2/5 h-auto lg:h-auto xl:h-auto 2xl:h-auto flex justify-center items-center px-4 py-6">
-            <img
-              src="img/proyecto1.png"
-              alt="Proyecto 1"
-              class="w-full h-auto object-cover transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
-            />
-          </div>
-          <div class="p-8 lg:w-3/5">
-            <h3 class="text-2xl font-semibold text-gray-800">
-              Ecommerce Proyecto Final React
-            </h3>
-            <p class="text-gray-600 mt-3 leading-relaxed">
-              Este proyecto es una aplicación para mostrar productos de una base de datos, con funcionalidades de búsqueda, filtrado por precio y favoritos, utilizando Firebase como backend y Chakra UI para los componentes de la interfaz.
-            </p>
-            <a
-              href="https://github.com/Natalia-Schwindt/proyectoFinalReact"
-              class="inline-block mt-5 text-blue-600 hover:text-blue-800 font-medium" target="_blank"
-              >Ver más →</a
-            >
-          </div>
-        </div>
-        
-        <div class="flex flex-col lg:flex-row-reverse items-center bg-white rounded-2xl shadow-lg overflow-hidden mb-12 mx-1 sm:mx-1">
-          <div class="w-full sm:w-full lg:w-2/5 h-auto lg:h-auto xl:h-auto 2xl:h-auto flex justify-center items-center p-4">
-            <img
-              src="img/proyecto2.png"
-              alt="Proyecto 2"
-              class="w-full h-auto object-contain transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
-            />
-          </div>
-          <div class="p-8 lg:w-3/5">
-            <h3 class="text-2xl font-semibold text-gray-800">
-              Lista de Tareas
-            </h3>
-            <p class="text-gray-600 mt-3 leading-relaxed">
-              Este proyecto es para crear listas de tareas, realizado con React y módulos de Chakra UI. Es un diseño totalmente responsivo, para ser utilizado desde cualquier dispositivo.
-            </p>
-            <a
-              href="https://github.com/Natalia-Schwindt/todolist"
-              class="inline-block mt-5 text-blue-600 hover:text-blue-800 font-medium" target="_blank"
-              >Ver más →</a
-            >
-          </div>
-        </div>
-        
-        <div class="flex flex-col lg:flex-row items-center bg-white rounded-2xl shadow-lg overflow-hidden mb-12 mx-1 sm:mx-1">
-          <div class="w-full sm:w-full lg:w-2/5 h-auto lg:h-auto xl:h-auto 2xl:h-auto flex justify-center items-center px-4 py-6">
-            <img
-              src="img/proyecto3.png"
-              alt="Proyecto 3"
-              class="w-full h-auto object-cover transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
-            />
-          </div>
-          <div class="p-8 lg:w-3/5">
-            <h3 class="text-2xl font-semibold text-gray-800">
-              Buscador de Comics
-            </h3>
-            <p class="text-gray-600 mt-3 leading-relaxed">
-              Este proyecto es un buscador de comics, utilizando la API de Marvel para obtener los datos de los comics. Se puede buscar por nombre, filtrar por personaje y ordenar por fecha de publicación, entre otros filtros.
-            </p>
-            <a
-            href="https://github.com/Natalia-Schwindt/buscadorDeComics"
-              class="inline-block mt-5 text-blue-600 hover:text-blue-800 font-medium" target="_blank"
-              >Ver más →</a
-            >
-          </div>
-        </div>
-        
-        <div class="flex flex-col lg:flex-row-reverse items-center bg-white rounded-2xl shadow-lg overflow-hidden mb-12 mx-1 sm:mx-1">
-          <div class="w-full sm:w-full lg:w-2/5 h-auto lg:h-auto xl:h-auto 2xl:h-auto flex justify-center items-center p-4">
-            <img
-              src="img/proyecto4.png"
-              alt="Proyecto 4"
-              class="w-full h-auto object-contain transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
-            />
-          </div>
-          <div class="p-8 lg:w-3/5">
-            <h3 class="text-2xl font-semibold text-gray-800">
-              AhorrADAs
-            </h3>
-            <p class="text-gray-600 mt-3 leading-relaxed">
-              Este es un proyecto creado en equipo, con la colaboración de otra desarrolladora. Es una aplicación para llevar un control de gastos e ingresos, con la posibilidad de ver estadísticas y gráficos de los movimientos realizados.
-            </p>
-            <a
-              href="https://github.com/Natalia-Schwindt/proyectoAhorrADAs"
-              class="inline-block mt-5 text-blue-600 hover:text-blue-800 font-medium" target="_blank"
-              >Ver más →</a
-            >
-          </div>
-        </div>
-
-       <div class="flex flex-col lg:flex-row items-center bg-white rounded-2xl shadow-lg overflow-hidden mb-12 mx-1 sm:mx-1">
-          <div class="w-full sm:w-full lg:w-2/5 h-auto lg:h-auto xl:h-auto 2xl:h-auto flex justify-center items-center px-4 py-6">
-            <img
-              src="img/proyecto5.png"
-              alt="Proyecto 5"
-              class="w-full h-auto object-cover transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
-            />
-          </div>
-          <div class="p-8 lg:w-3/5">
-            <h3 class="text-2xl font-semibold text-gray-800">
-              Editor de Memes
-            </h3>
-            <p class="text-gray-600 mt-3 leading-relaxed">
-              Este proyecto sirve para crear memes personalizados, con la posibilidad de agregar texto, cambiar el tamaño y la posición de las letras, y elegir entre una variedad de filtros para la imágen de fondo.
-            </p>
-            <a
-              href="https://github.com/Natalia-Schwindt/editordememes"
-              class="inline-block mt-5 text-blue-600 hover:text-blue-800 font-medium" target="_blank"
-              >Ver más →</a
-            >
-          </div>
-        </div>
-        
-         <div class="flex flex-col lg:flex-row-reverse items-center bg-white rounded-2xl shadow-lg overflow-hidden mb-12 mx-1 sm:mx-1">
-          <div class="w-full sm:w-full lg:w-2/5 h-auto lg:h-auto xl:h-auto 2xl:h-auto flex justify-center items-center p-4">
-            <img
-              src="img/proyecto6.png"
-              alt="Proyecto 6"
-              class="w-full h-auto object-contain transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
-            />
-          </div>
-          <div class="p-8 lg:w-3/5">
-            <h3 class="text-2xl font-semibold text-gray-800">
-              Proyecto QR
-            </h3>
-            <p class="text-gray-600 mt-3 leading-relaxed">
-              En este proyecto se crea un QR y se lo asocia a una página web. Esto permite acceder a diferentes opciones preconfigurables.
-            </p>
-            <a
-              href="https://github.com/Natalia-Schwindt/proyectoqr"
-              class="inline-block mt-5 text-blue-600 hover:text-blue-800 font-medium" target="_blank"
-              >Ver más →</a
-            >
-          </div>
-        </div>
-
-
-
-
-
-
-
-        <!-- <div
-          class="flex flex-col lg:flex-row items-center bg-white rounded-2xl shadow-lg overflow-hidden mb-12"
-        >
-          <div class="lg:w-2/5 h-96 flex justify-center items-center p-4">
-            <img
-              src="img/proyecto3.png"
-              alt="Proyecto 3"
-              class="h-full object-contain transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
-            />
-          </div>
-          <div class="p-8 lg:w-3/5">
-            <h3 class="text-2xl font-semibold text-gray-800">
-              Buscador de Comics
-            </h3>
-            <p class="text-gray-600 mt-3 leading-relaxed">
-              Este proyecto es un buscador de comics, utilizando la API de Marvel para obtener los datos de los comics. Se puede buscar por nombre, filtrar por personaje y ordenar por fecha de publicación, entre otros filtros.
-            </p>
-            <a
-              href="https://github.com/Natalia-Schwindt/buscadorDeComics"
-              class="inline-block mt-5 text-blue-600 hover:text-blue-800 font-medium" target="_blank"
-              >Ver más →</a
-            >
-          </div>
-        </div> -->
-
-        <!-- <div
-          class="flex flex-col lg:flex-row-reverse items-center bg-white rounded-2xl shadow-lg overflow-hidden mb-12"
-        >
-          <div class="lg:w-2/5 h-96 flex justify-center items-center p-4">
-            <img
-              src="img/proyecto4.png"
-              alt="Proyecto 4"
-              class="h-full object-contain transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
-            />
-          </div>
-          <div class="p-8 lg:w-3/5">
-            <h3 class="text-2xl font-semibold text-gray-800">
-              AhorrADAs
-            </h3>
-            <p class="text-gray-600 mt-3 leading-relaxed">
-              Este es un proyecto creado en equipo, con la colaboración de otra desarrolladora. Es una aplicación para llevar un control de gastos e ingresos, con la posibilidad de ver estadísticas y gráficos de los movimientos realizados.
-            </p>
-            <a
-              href="https://github.com/Natalia-Schwindt/proyectoAhorrADAs"
-              class="inline-block mt-5 text-blue-600 hover:text-blue-800 font-medium" target="_blank"
-              >Ver más →</a
-            >
-          </div>
-        </div> -->
-
-        <!-- <div
-          class="flex flex-col lg:flex-row items-center bg-white rounded-2xl shadow-lg overflow-hidden mb-12"
-        >
-          <div class="lg:w-2/5 h-96 flex justify-center items-center p-4">
-            <img
-              src="img/proyecto5.png"
-              alt="Proyecto 3"
-              class="h-full object-contain transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
-            />
-          </div>
-          <div class="p-8 lg:w-3/5">
-            <h3 class="text-2xl font-semibold text-gray-800">
-              Editor de Memes
-            </h3>
-            <p class="text-gray-600 mt-3 leading-relaxed">
-              Este proyecto sirve para crear memes personalizados, con la posibilidad de agregar texto, cambiar el tamaño y la posición de las letras, y elegir entre una variedad de filtros para la imágen de fondo.
-            </p>
-            <a
-              href="https://github.com/Natalia-Schwindt/editordememes"
-              class="inline-block mt-5 text-blue-600 hover:text-blue-800 font-medium" target="_blank"
-              >Ver más →</a
-            >
-          </div>
-        </div> -->
-
-        <!-- <div
-          class="flex flex-col lg:flex-row-reverse items-center bg-white rounded-2xl shadow-lg overflow-hidden mb-12"
-        >
-          <div class="lg:w-2/5 h-96 flex justify-center items-center p-4">
-            <img
-              src="img/proyecto6.png"
-              alt="Proyecto 6"
-              class="h-full object-contain transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-2xl"
-            />
-          </div>
-          <div class="p-8 lg:w-3/5">
-            <h3 class="text-2xl font-semibold text-gray-800">
-              Proyecto QR
-            </h3>
-            <p class="text-gray-600 mt-3 leading-relaxed">
-              En este proyecto se crea un QR y se lo asocia a una página web. Esto permite acceder a diferentes opciones preconfigurables.
-            </p>
-            <a
-              href="https://github.com/Natalia-Schwindt/proyectoqr"
-              class="inline-block mt-5 text-blue-600 hover:text-blue-800 font-medium" target="_blank"
-              >Ver más →</a
-            >
-          </div>
-        </div> -->
-      </section>
-
-      <section id="contact" class="py-12 px-6 bg-gray-50 text-center">
-        <h2 class="text-3xl font-semibold text-gray-800 mb-4">Contacto</h2>
-        <p class="text-lg leading-relaxed text-gray-600 mb-8">
-          Si te interesa trabajar conmigo o conocer más, no dudes en
-          contactarme.
-        </p>
-        <a href="#top" class="inline-block mt-5 text-blue-600 hover:text-blue-800 font-medium">
-            Volver arriba
-          </a>
-      </section>
+        class="text-4xl sm:text-5xl md:text-5xl lg:text-7xl 2xl:text-9xl text-white font-bold mt-40 mb-8 text-center drop-shadow-[0_0_10px_#000000] [text-shadow:_-2px_-2px_0_black,_2px_-2px_0_black,_-2px_2px_0_black,_2px_2px_0_black]"
+      >
+        Portfolio Web 2025
+      </h1>
     </main>
+
     <footer
-      class="bg-gray-800 text-white py-6 mt-8 flex flex-col items-center space-y-4"
+      class="text-white text-lg font-bold py-6 mt-8 flex flex-col items-center space-y-4"
     >
       <div class="flex space-x-4">
         <a
@@ -380,5 +67,6 @@
 
       <p class="text-sm mt-2">Creado por Natalia Schwindt © 2025</p>
     </footer>
+    <script src="/script.js"></script>
   </body>
 </html>
