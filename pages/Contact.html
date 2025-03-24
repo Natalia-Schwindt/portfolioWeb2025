@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/eb8debf0a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body
+    class="h-screen bg-[url(/img/banner.jpg)] bg-cover bg-center bg-no-repeat flex flex-col"
+  >
+  <main class="flex flex-col items-center justify-center flex-grow mx-4">
+    <nav
+      class="absolute top-0 flex justify-between w-full text-white font-bold p-4"
+    >
+      <button class="md:hidden text-2xl" onclick="toggleMenu()">
+        <i id="menu-icon" class="fas fa-bars"></i>
+      </button>
+      <ul class="hidden md:flex p-4 space-x-4">
+        <a href="/index.html">Inicio</a>
+        <a href="/pages/Presentation.html">Sobre mi</a>
+        <a href="/pages/Proyects.html">Proyectos</a>
+      </ul>
+    </nav>
+    <div
+      id="mobile-menu"
+      class="hidden flex-col absolute top-14 left-0 w-full bg-gray-900 text-white p-4 space-y-2 md:hidden"
+    >
+      <a href="/index.html" class="block">Inicio</a>
+      <a href="/pages/Presentation.html">Sobre mi</a>
+      <a href="/pages/Proyects.html" class="block">Proyectos</a>
+    </div>
+    <section id="contact" class="py-12 px-6 text-center">
+      <h2 class="text-4xl font-semibold text-white mb-6">Contacto</h2>
+      <p class="text-xl sm:text-2xl md:text-3xl font-bold leading-relaxed text-white mb-8 max-w-2xl mx-auto drop-shadow-[2px_2px_4px_rgba(0,0,0,0.8)]">
+        Si te interesa trabajar conmigo o conocer más, no dudes en contactarme.
+      </p>
+      <a
+            href="/index.html"
+            class="inline-block mt-5 bg-white text-blue-600 hover:text-blue-800 font-medium rounded-lg px-2 mx-2"
+          >
+            Volver atrás
+          </a>
+    </section>
+    </main>
+    <footer
+      class="text-white text-lg font-bold py-6 mt-8 flex flex-col items-center space-y-4"
+    >
+      <div class="flex space-x-4">
+        <a
+          href="https://www.linkedin.com/in/natalia-schwindt-3a3438115/"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="fab fa-linkedin text-2xl"></i>
+        </a>
+        <a
+          href="https://github.com/Natalia-Schwindt"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+        <a href="mailto:naty8014l@gmail.com" aria-label="Correo">
+          <i class="fas fa-envelope text-2xl"></i>
+        </a>
+      </div>
+
+      <p class="text-sm mt-2">Creado por Natalia Schwindt © 2025</p>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
